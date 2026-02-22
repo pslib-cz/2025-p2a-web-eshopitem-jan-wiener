@@ -1,0 +1,166 @@
+
+
+
+
+.cards_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 
+    250px
+    auto
+    auto
+    auto
+    auto
+    ;
+    gap: 1em;
+    
+}
+
+.card {
+    padding: 1em 1em;
+    display: grid;
+    grid-row: 1 / -1;
+
+    grid-template-rows: subgrid;
+
+    justify-items: stretch;
+
+
+    background-color: rgb(245, 245, 245);
+}
+
+.card__title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0;
+    padding: 0;
+}
+
+.card__image {
+    justify-self: center;
+}
+
+.card__image img {
+
+    padding: 1rem;
+    height: 80%;
+}
+
+
+.card__desc {
+    /* padding: 0 0.4em ; */
+    /* justify-self: stretch; */
+    display: flex;
+    flex-direction: column;
+}
+
+.card__attr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.attr__value {
+    font-weight: bold;
+}
+
+
+.card__info {
+    /* justify-self: stretch; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+
+
+.price__dph {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(0, 128, 0);
+}
+
+
+.price__nodph {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(128, 0, 0);
+    text-align: end;
+}
+
+
+
+
+
+.info__price {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: end;
+}
+
+.info__stock {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.stock__amount {
+    color: rgb(27, 168, 22);
+}
+
+.stock__pieces {
+    font-weight: bold;
+}
+
+
+.stock__day {
+    font-weight: bold;
+}
+
+
+
+
+
+
+.card__menu {
+    display: grid;
+    grid-template-columns: 5fr 6fr;
+    grid-template-rows: 1fr;
+    background-color: rgb(216, 215, 215);
+    justify-items: stretch;
+    align-items: center;
+}
+
+.menu__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 1em;
+    gap: 1em;
+}
+
+.menu__button {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+
+
+
+
+    padding: 1em 1em;
+    /* margin-right: 1em; */
+    margin: 0.7em 0.7em;
+
+    background-color: #31bf24;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
