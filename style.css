@@ -89,7 +89,7 @@ html {
 
 .card__title {
     text-align: start;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     /* font-weight: bold; */
     font-family: var(--fontBold);
     margin: 0 0;
@@ -112,6 +112,7 @@ html {
     /* justify-self: stretch; */
     display: flex;
     flex-direction: column;
+    margin-bottom: 3rem;
 }
 
 .card__attr {
