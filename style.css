@@ -28,14 +28,14 @@ html {
     --colorGreen: #31bf24;
     --colorBlue: #009bc9;
     font-family: var(--fontNormal);
-    background-color: #dadada;
+    background-color: #ffffff;
 }
 
 
 .cards_container {  
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
-    grid-template-rows:
+    grid-auto-rows:
         250px auto auto auto auto;
     gap: 0.5em;
 }
@@ -45,6 +45,7 @@ html {
     padding: 1em;
     display: grid;
     grid-row: span 5;
+    gap: 1rem;
 
     grid-template-rows: subgrid;
     position: relative;
@@ -52,6 +53,13 @@ html {
 
 
     background-color: rgb(255, 255, 255);
+}
+
+.card:hover {
+    /* box-shadow: ; */
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    /* transform: translateY(-2px); */
+    /* transition: all 0.3s ease; */
 }
 
 .card__badgebox {
@@ -97,12 +105,15 @@ html {
 }
 
 .card__image {
-    justify-self: center;
+    /* justify-self: center; */
+    padding: 1rem;
 }
 
 .card__image img {
-
-    padding: 1rem;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    display: inline-block;
     /* height: 220px; */
 }
 
@@ -112,7 +123,7 @@ html {
     /* justify-self: stretch; */
     display: flex;
     flex-direction: column;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
 }
 
 .card__attr {
@@ -128,7 +139,7 @@ html {
 
 
 .card__info {
-    /* justify-self: stretch; */
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -203,9 +214,13 @@ html {
 
 
 .card__menu {
-    display: grid;
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* display: grid;
     grid-template-columns: 5fr 6fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr; */
     background-color: rgb(216, 215, 215);
     justify-items: stretch;
     align-items: center;
@@ -226,27 +241,32 @@ p {
 }
 
 .menu__button {
-    display: flex;
+    /* display: flex; */
+    line-height: 1;
     gap: 0.5em;
     align-items: center;
-    justify-content: center;
-    align-content: center;
+    /* justify-content: center; */
+
     cursor: pointer;
     color: white;
-    text-align: center;
-    /* font-weight: bold; */
+
     font-size: 1.2rem;
     font-family: var(--fontBold);
 
 
-
-
-
     padding: 0.7em;
-    /* margin-right: 1em; */
-    margin: 0.7em 0.7em;
 
     background-color: #31bf24;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu__button img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menu__button span {
+    display: inline-block;
+    vertical-align: middle;
 }
